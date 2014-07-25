@@ -156,9 +156,9 @@
 -(void) performScreenshotAndBlur
 {
     UIImage * image = [self convertViewToImage];
-    UIImage *blurredSnapshotImage = [_blurFilter imageByFilteringImage:image];
+//    UIImage *blurredSnapshotImage = [_blurFilter imageByFilteringImage:image];
     
-    [bg setImage:blurredSnapshotImage];
+    [bg setImage:image];
     bg.alpha = 0.0;
     
     [self addSubview:bg];
