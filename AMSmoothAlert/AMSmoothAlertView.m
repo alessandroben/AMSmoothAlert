@@ -99,10 +99,10 @@
     self.opaque = YES;
     self.alpha = 1;
   
-    _blurFilter = [[GPUImageiOSBlurFilter alloc] init];
-    _blurFilter.blurRadiusInPixels = 2.0;
+//    _blurFilter = [[GPUImageiOSBlurFilter alloc] init];
+//    _blurFilter.blurRadiusInPixels = 2.0;
   
-    bg = [[UIImageView alloc]initWithFrame:[self screenFrame]];
+//    bg = [[UIImageView alloc]initWithFrame:[self screenFrame]];
   
     alertView = [self alertPopupView];
   
@@ -126,7 +126,7 @@
     [alertSquare.layer setShadowRadius:20.0f];
     [alertSquare.layer setShadowOffset:CGSizeMake(0.0, 0.0)];
     
-    [self performScreenshotAndBlur];
+//    [self performScreenshotAndBlur];
     
     return alertSquare;
 }
